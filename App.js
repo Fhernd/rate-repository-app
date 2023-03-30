@@ -1,10 +1,14 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableWithoutFeedback } from 'react-native';
 
 export default function App() {
+  const nombre = 'L&J';
+
   return (
     <View style={styles.container}>
-      <Text>¡Hola, John!</Text>
+      <TouchableWithoutFeedback onPress={() => alert('Presionaste')}>
+        <Text>¡{nombre}!</Text>
+      </TouchableWithoutFeedback>
       <StatusBar style="auto" />
     </View>
   );
