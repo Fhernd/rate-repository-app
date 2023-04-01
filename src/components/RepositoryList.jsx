@@ -1,11 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { FlatList, View, Text } from 'react-native';
 import repositories from '../data/repositories';
 
 const RepositoryList = () => {
     return (
-        <View>
-            {repositories.map((e) => (
+        <FlatList
+            data={repositories}
+            renderItem={({ item: e }) => (
                 <View key={e.id}>
                     <Text>{e.fullName}</Text>
                     <Text>{e.description}</Text>
@@ -15,9 +16,9 @@ const RepositoryList = () => {
                     <Text>{e.reviewCount}</Text>
                     <Text>{e.ratingAverage}</Text>
                 </View>
-            ))
-        }
-        </View>
+            )}
+        >
+        </FlatList>
     );
 }
 

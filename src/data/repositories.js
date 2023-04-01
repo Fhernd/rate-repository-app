@@ -54,7 +54,7 @@ export default [
         forksCount: 260149,
         stargazersCount: 52869,
         ratingAverage: 99,
-        reviewCount: 33,
+        reviewCount: 31,
         ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/69631?v=4',
     }
 ]
