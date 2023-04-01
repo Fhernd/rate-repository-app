@@ -46,4 +46,15 @@ export default [
         reviewCount: 10,
         ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/13142323?v=4',
     },
+    {
+        id: 'facebook.react',
+        fullName: 'facebook/react',
+        description: 'A declarative, efficient, and flexible JavaScript library for building user interfaces.',
+        language: 'JavaScript',
+        forksCount: 260149,
+        stargazersCount: 52869,
+        ratingAverage: 99,
+        reviewCount: 33,
+        ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/69631?v=4',
+    }
 ]
