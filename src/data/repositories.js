@@ -42,8 +42,8 @@ export default [
         language: 'TypeScript',
         forksCount: 13902,
         stargazersCount: 52869,
-        ratingAverage: 0,
-        reviewCount: 0,
+        ratingAverage: 20,
+        reviewCount: 10,
         ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/13142323?v=4',
     },
 ]

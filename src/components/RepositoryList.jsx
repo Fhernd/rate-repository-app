@@ -20,3 +20,5 @@ const RepositoryList = () => {
         </View>
     );
 }
+
+export default RepositoryList;
