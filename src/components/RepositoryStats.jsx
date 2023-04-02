@@ -6,20 +6,20 @@ import StyledText from "./StyledText";
 const RepositoryStats = item => (
     <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
         <View>
-            <StyledText fontWeight='bold'>Stars</StyledText>
-            <StyledText>{item.stargazersCount}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Stars</StyledText>
+            <StyledText align='center'>{item.stargazersCount}</StyledText>
         </View>
         <View>
-            <StyledText fontWeight='bold'>Forks</StyledText>
-            <StyledText>{item.forksCount}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Forks</StyledText>
+            <StyledText align='center'>{item.forksCount}</StyledText>
         </View>
         <View>
-            <StyledText fontWeight='bold'>Review</StyledText>
-            <StyledText>{item.reviewCount}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Review</StyledText>
+            <StyledText align='center'>{item.reviewCount}</StyledText>
         </View>
         <View>
-            <StyledText fontWeight='bold'>Rating</StyledText>
-            <StyledText>{item.ratingAverage}</StyledText>
+            <StyledText align='center' fontWeight='bold'>Rating</StyledText>
+            <StyledText align='center'>{item.ratingAverage}</StyledText>
         </View>
     </View>
 );
