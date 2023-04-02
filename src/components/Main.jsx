@@ -2,7 +2,7 @@ import React from 'react';
 import Constants from 'expo-constants';
 import { Text, View } from 'react-native';
 import { Switch } from 'react-native-web';
-import { Route } from 'react-router-native';
+import { Redirect, Route } from 'react-router-native';
 
 import RepositoryList from './RepositoryList';
 import AppBar from './AppBar';
