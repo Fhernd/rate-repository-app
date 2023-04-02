@@ -4,14 +4,13 @@ import StyledText from './StyledText';
 
 const RepositoryItem = (item) => (
     <View key={item.id} style={styles.container}>
-        <StyledText big bold>ID: {item.id}</StyledText>
-        <StyledText blue>FullName: {item.fullName}</StyledText>
-        <StyledText bold>Descripcpion: {item.description}</StyledText>
-        <StyledText blue>Language: {item.language}</StyledText>
-        <StyledText small>Stars: {item.stargazersCount}</StyledText>
-        <StyledText small>Forks: {item.forksCount}</StyledText>
-        <StyledText small>Review: {item.reviewCount}</StyledText>
-        <StyledText small>Rating: {item.ratingAverage}</StyledText>
+        <StyledText>FullName: {item.fullName}</StyledText>
+        <StyledText>Descripcpion: {item.description}</StyledText>
+        <StyledText>Language: {item.language}</StyledText>
+        <StyledText>Stars: {item.stargazersCount}</StyledText>
+        <StyledText>Forks: {item.forksCount}</StyledText>
+        <StyledText>Review: {item.reviewCount}</StyledText>
+        <StyledText>Rating: {item.ratingAverage}</StyledText>
     </View>
 );
 
