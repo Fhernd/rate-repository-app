@@ -1,14 +1,11 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { Image, View, StyleSheet } from 'react-native';
 import RepositoryStats from './RepositoryStats';
 import StyledText from './StyledText';
 import theme from '../theme.js';
 
 const RepositoryItem = (item) => (
     <View key={item.id} style={styles.container}>
-        <StyledText fontSize='subheading' fontWeight='bold'>{item.fullName}</StyledText>
-        <StyledText>{item.description}</StyledText>
-        <StyledText style={styles.language}>{item.language}</StyledText>
         <RepositoryStats {...item} />
     </View>
 );
@@ -32,6 +29,11 @@ const styles = StyleSheet.create({
         borderRadius: 4,
         overflow: 'hidden',
     },
+    image: {
+        width: 48,
+        height: 48,
+        borderRadius: 4,
+    }
 });
 
 export default RepositoryItem;
