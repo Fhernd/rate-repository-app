@@ -6,7 +6,7 @@ import StyledText from './StyledText';
 const RepositoryItem = (item) => (
     <View key={item.id} style={styles.container}>
         <StyledText fontSize='subheading' fontWeight='bold'>FullName: {item.fullName}</StyledText>
-        <StyledText>Descripcpion: {item.description}</StyledText>
+        <StyledText>Description: {item.description}</StyledText>
         <StyledText>Language: {item.language}</StyledText>
         <RepositoryStats {...item} />
     </View>
