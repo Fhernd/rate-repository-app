@@ -56,5 +56,16 @@ export default [
         ratingAverage: 99,
         reviewCount: 31,
         ownerAvatarUrl: 'https://avatars3.githubusercontent.com/u/69631?v=4',
+    },
+    {
+        id: 'angular.angular',
+        fullName: 'angular/angular',
+        description: 'One framework. Mobile & desktop.',
+        language: 'TypeScript',
+        forksCount: 18349,
+        stargazersCount: 45377,
+        ratingAverage: 100,
+        reviewCount: 2,
+        ownerAvatarUrl: 'https://avatars1.githubusercontent.com/u/139426?v=4',
     }
 ]

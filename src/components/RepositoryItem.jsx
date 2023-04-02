@@ -1,11 +1,12 @@
 import React from 'react';
-import { Image, View, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import RepositoryStats from './RepositoryStats';
-import StyledText from './StyledText';
 import theme from '../theme.js';
+import RepositoryItemHeader from './RepositoryItemHeader';
 
 const RepositoryItem = (item) => (
     <View key={item.id} style={styles.container}>
+        <RepositoryItemHeader {...item} />
         <RepositoryStats {...item} />
     </View>
 );
