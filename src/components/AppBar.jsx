@@ -20,8 +20,8 @@ const AppBarTab = ({ active, children, to }) => {
 const AppBar = () => {
     return (
         <View style={styles.container}>
-            <AppBarTab to='/'>Repositories</AppBarTab>
-            <AppBarTab to='/signin'>Sign in</AppBarTab>
+            <AppBarTab active to='/'>Repositories</AppBarTab>
+            <AppBarTab active to='/signin'>Sign in</AppBarTab>
         </View>
     );
 };

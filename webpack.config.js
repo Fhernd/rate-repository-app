@@ -8,7 +8,7 @@ module.exports = async function (env, argv) {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [
-            paht.join(__dirname, 'node_modules/react-router-native'),   
+            path.join(__dirname, 'node_modules/react-router-native'),   
         ]
     });
 

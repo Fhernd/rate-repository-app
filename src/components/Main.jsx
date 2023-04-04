@@ -1,5 +1,4 @@
 import React from 'react';
-import Constants from 'expo-constants';
 import { Text, View } from 'react-native';
 import { Redirect, Route, Switch } from 'react-router-native';
 
