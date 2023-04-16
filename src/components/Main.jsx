@@ -10,13 +10,13 @@ const Main = () => {
         <View style={{ flex: 1 }}>
             <AppBar />
             <Switch>
-                <Route path="/" exact>
+                <Route path='/' exact>
                     <RepositoryList />
                 </Route>
-                <Route path="/signin" exact>
+                <Route path='/signin' exact>
                     <Text>Sign in</Text>
                 </Route>
-                <Redirect to="/" />
+                <Redirect to='/' />
             </Switch>
         </View>
     );
