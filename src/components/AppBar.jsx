@@ -7,11 +7,14 @@ import { Link, TouchableWithoutFeedback, useLocation } from 'react-router-native
 
 import theme from '../theme.js';
 
-const AppBarTab = ({ active, children, to }) => {
+const AppBarTab = ({ children, to }) => {
+    const { pathname } = useLocation();
+
+    const isActive = pathname === to;
 
     const textStyles = [
         styles.text,
-        active && styles.active,
+        isActive && styles.active,
     ]
     
     return (
@@ -27,11 +30,8 @@ const AppBar = () => {
     return (
         <View style={styles.container}>
             <ScrollView horizontal style={styles.scroll}>
-                <AppBarTab active to='/'>Repositories</AppBarTab>
-                <AppBarTab to='/signin'>Contact</AppBarTab>
-                <AppBarTab to='/signin'>My YT Channel</AppBarTab>
+                <AppBarTab to='/'>Repositories</AppBarTab>
                 <AppBarTab to='/signin'>Sign in</AppBarTab>
-                <AppBarTab to='/signin'>Register</AppBarTab>
             </ScrollView>
         </View>
     );
