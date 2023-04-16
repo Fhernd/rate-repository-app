@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import StyledText from './StyledText';
 import Constants from 'expo-constants';
 
@@ -9,7 +9,7 @@ import theme from '../theme.js';
 
 const AppBarTab = ({ active, children, to }) => {
     return (
-        <Link to={to}>
+        <Link to={to} component={TouchableWithoutFeedback}>
             <StyledText fontWeight='bold' style={styles.text}>
                 {children}
             </StyledText>
@@ -20,8 +20,13 @@ const AppBarTab = ({ active, children, to }) => {
 const AppBar = () => {
     return (
         <View style={styles.container}>
-            <AppBarTab active to='/'>Repositories</AppBarTab>
-            <AppBarTab active to='/signin'>Sign in</AppBarTab>
+            <ScrollView horizontal style={styles.scroll}>
+                <AppBarTab active to='/'>Repositories</AppBarTab>
+                <AppBarTab active to='/signin'>Contact</AppBarTab>
+                <AppBarTab active to='/signin'>My YT Channel</AppBarTab>
+                <AppBarTab active to='/signin'>Sign in</AppBarTab>
+                <AppBarTab active to='/signin'>Register</AppBarTab>
+            </ScrollView>
         </View>
     );
 };
@@ -37,7 +42,11 @@ const styles = StyleSheet.create({
     text: {
         color: theme.appBar.textPrimary,
         paddingHorizontal: 10,
-    }
+    },
+    scroll: {
+        paddingTop: 5,
+        paddingBottom: 15,
+    },
 });
 
 
